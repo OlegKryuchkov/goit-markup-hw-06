@@ -588,6 +588,36 @@
             </li>
           </ul>
         </div>
+
+        <form class="online-form">
+          <p class="onine-form-description">Підпишіться на розсилку</p>
+          <div class="online-form-wrap">
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="online-form-input"
+              name="online-name"
+            />
+            <button type="submit" class="online-form-btn">
+              Підписатися
+              <svg class="online-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-footer-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- <div class="footer-join">
+          <p class="footer-join-title">Підпишіться на розсилку</p>
+          <input
+            type="email"
+            name="footer-join-mail"
+            class="footer-join-input"
+            placeholder="vova@ukr.net"
+            required
+            id="footer-join-mail"
+          />
+        </div> -->
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -659,10 +689,16 @@
               type="checkbox"
               name="privacy"
               id="privacy"
-              class="input-check"
+              class="input-check visually-hidden"
             />
-            <label for="privacy" class="check-text"
-              >Погоджуюся з розсилкою та приймаю Умови договору</label
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-modal-check-2"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю &nbsp
+              <a class="policy" href=""> Умови договору</a></label
             >
           </div>
 

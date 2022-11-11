@@ -305,7 +305,6 @@ body {
   cursor: pointer;
   display: inline-block;
   margin: 0 auto;
-  border-radius: 4px;
   padding: 10px 32px;
 }
 
@@ -701,6 +700,69 @@ body {
   background: var(--icon-background-secondary);
 }
 
+.online-form {
+  margin-top: 12px;
+  margin-left: auto;
+}
+
+.online-form-wrap {
+  display: flex;
+}
+
+.online-form-input {
+  width: 358px;
+  height: 50px;
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.onine-form-description {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.online-form-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+  min-height: 50px;
+
+  margin: 0 auto;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--hero-text-primary);
+}
+
+.online-btn-icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
 /* ---------------MODAL----------------*/
 
 .backdrop {
@@ -808,6 +870,8 @@ body {
 }
 
 .input-wrap {
+  display: flex;
+  align-items: center;
   position: relative;
   margin-bottom: 28px;
 }
@@ -902,6 +966,32 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.check-text .policy {
+  color: #2196f3;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #2196f3;
+  border-color: transparent;
+  fill: #ffffff;
+}
+
+.input-check:focus + .check-text span {
+  border-color: #2196f3;
 }
 
 /* .check-text::before {
